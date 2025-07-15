@@ -2,31 +2,31 @@
 import java.util.Scanner;
 
 class WAP9_IntAmount {
-    double principle;
-    float rate;
-    int time;
+    double p;
+    float r;
+    int t;
 
     void getData() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter principle: ");
-        principle = sc.nextDouble();
+        p = sc.nextDouble();
         System.out.print("Enter rate: ");
-        rate = sc.nextFloat();
+        r = sc.nextFloat();
         System.out.print("Enter time: ");
-        time = sc.nextInt();
+        t = sc.nextInt();
     }
 
     double interest() {
-        return (principle * rate * time) / 100;
+        return (p * r * t) / 100;
     }
 
     double amount() {
-        return principle + interest();
+        return p + interest();
     }
     public static void main(String[] args) {
-        WAP9_IntAmount var1 = new WAP9_IntAmount();
-        var1.getData();
-        System.out.println("Interesr: "+var1.interest());
-        System.out.println("Amount: "+var1.amount());
+        WAP9_IntAmount o = new WAP9_IntAmount();
+        o.getData();
+        System.out.println("Interest: "+o.interest());
+        System.out.println("Amount: "+o.amount());
     }
 }
