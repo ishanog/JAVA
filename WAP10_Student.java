@@ -20,7 +20,7 @@ class WAP10_Student {
 
         WAP10_Student s1 = new WAP10_Student(); 
 
-        System.out.println("Student: ID=" + s1.id + ", Marks=" + s1.marks);
+        System.out.println("ID=" + s1.id + ", Marks=" + s1.marks);
     }
 }
 
